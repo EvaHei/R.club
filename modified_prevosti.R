@@ -1,6 +1,10 @@
-## Die Funktion ModProv benoetigft als Parameter einen Dataframe oder eine Matrix mit Genotypen in Zeilen
-## und Markern in Spalten, mit jeweils zwei Spalten pro Marker (eine pro Allel) in denen das Vorhandensein
-## des jeweiligen Allels mit 1 angegeben wird, bzw die Abwesenheit des Allels mit 0.
+## Die Funktion ModProv berechnet eine genetische Distanzmatrix zwischen Individuen. Sie benoetigt als 
+## Parameter einen Dataframe oder eine Matrix mit Genotypen in Zeilen und Markern in Spalten, mit jeweils
+## zwei Spalten pro Marker (eine pro Allel) in denen das Vorhandensein des jeweiligen Allels mit 1 
+## angegeben wird, bzw die Abwesenheit des Allels mit 0. Möglich sind also pro Marker und Genotyp die 
+## Kombinationen 10, 01 und 11. Per Definition haben zwei gleiche Homozygote zueinander die Distanz 0, 
+## zwei unterschiedliche Homozygote haben die Distanz 1 und Heterozygote zu Homozygoten, sowie zwei Hetero-
+## zygote zueinander haben die Distanz 0.5.
 ##########################################################################################################
 
 ## ModProv v2.0 ##########################################################################################
